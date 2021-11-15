@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JS EVENT</title>
+</head>
+<body>
+<h1>Hello js Event</h1>
+<input type="text" placeholder="id" id="textinput">
+<button id="textbutton" onclick="">Test</button>
+<script src="asserts/jquery-3.6.0.min.js"></script>
+<script>
+
+    //most used event in js
+    //click
+    //dbblclick// double click you can see the alert
+    //blur
+    //mousemove
+    //focus
+    //keyup
+    //keydown
+    //keypress
+    //mouseup
+
+  /*  $('#textbutton').on('click',function () {
+alert('Hello')
+    });
+   $('#textbutton').off('click');*/
+
+  $('#textbutton').on('dbblclick',function () {
+      alert('Hello')
+  });
+
+ /* $('#textinput').on('blur',function () {
+console.log("text Blur")
+  });
+    $('#textinput').on('blur',function () {
+        console.log("text Blur")
+    });*/
+
+/* 01)
+$(document).on('mousemove',function () {
+console.log("mouse move");
+});
+*/
+    $(document).on('mousemove',function (eventOb) {
+     /*   console.log(eventOb.pageY);*/
+        $('h1').css({
+            'position':'absolute','left':eventOb.pageX,
+            'top':eventOb.pageY
+        });
+
+    });
+</script>
+</body>
+</html>

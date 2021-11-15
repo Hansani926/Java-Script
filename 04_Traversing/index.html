@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travalsing</title>
+</head>
+<body>
+<section>
+    <div></div>
+</section>
+<section>
+    <div>
+        <a href="">Customer</a>
+        <h1> HI WERTYUIOP SDFGHJKL</h1>
+        <h2> HI sdfghjkl ghjkl</h2>
+    </div>
+</section>
+<main>
+    <section>
+        <div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae cupiditate debitis dicta fugit iure magni minima molestiae mollitia nesciunt nihil non placeat porro provident quae quos,
+                    tempora voluptas voluptate!</p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias beatae cupiditate debitis dicta fugit iure magni minima molestiae mollitia nesciunt nihil non placeat porro provident quae quos,
+            tempora voluptas voluptate!</p>
+        <ul>
+            <li>IJSE</li>
+            <li>GDSE</li>
+            <li>CMJD</li>
+            <li>RWAD</li>
+            <li>DEP</li>
+        </ul>
+    </section>
+    <h1> HI WERTYUIOP SDFGHJKL</h1>
+</main>
+<script src="assests/js/jquery-3.6.0.min.js"></script>
+<script>
+   /* $('a')
+
+    $('a').parent();//select the nearest parent
+
+    $('ol').parent();
+
+    $('ol').parent().parent();
+
+    $('a').parent().parent();
+
+    $('a').parent().parent().parent();//can call repeatlly
+
+    //return all the parent hierarchy
+
+    $('a').parents();//
+   // S.fn.init(4) [div, section, body, html, prevObject: S.fn.init(1)]
+    $('a').parents('main');
+   // S.fn.init [prevObject: S.fn.init(1)]
+*/
+
+
+  // when we have collection  of elements we can use
+   $('body').children();
+   //S.fn.init(5) [section, section, main, script, script, prevObject: S.fn.init(1)]
+   $('body').children('main');
+  // S.fn.init [main, prevObject: S.fn.init(1)]
+   $('body').children('main').children();
+  // S.fn.init(2) [section, section, prevObject: S.fn.init(1)]
+   $('body').children('main').children('section');
+   //S.fn.init(2) [section, section, prevObject: S.fn.init(1)]
+   $('body').children('main').children().get(0);
+   //<section>​…​</section>​
+   $('body').children('main').children();
+   //S.fn.init(2) [section, section, prevObject: S.fn.init(1)]
+   $('body').children('main').children().first();
+  // S.fn.init [section, prevObject: S.fn.init(2)]
+   $('body').children('main').children().last();
+   //S.fn.init [section, prevObject: S.fn.init(2)]
+
+    //parent(),parents and children()
+   $('body').children('section').parent();
+   $('body').children('main').parents();
+
+   //find()
+   $('body').find('p');
+   //S.fn.init(2) [p, p, prevObject: S.fn.init(1)]
+   $('body').find('p').css('color','blue');
+   //S.fn.init(2) [p, p, prevObject: S.fn.init(1)]
+   $('body').find('section')
+  // S.fn.init(4) [section, section, section, section, prevObject: S.fn.init(1)]
+
+   $('body').append('<h1>Append</h1>');//phalata ekthu wenne  <script >ektth phalata ekthu wennwa
+
+   $('body').prepend('<h1>Prepend</h1>');//udata ekthu wenne  ekthu wennwa
+
+   $('body').prepend('<h1>Prepend 1</h1>');
+
+   $('body').append('<h1>Append</h1>');
+
+   $('ul').append('<li>Append 1</li>');
+
+   $('ul').prepend('<li>Prepend 1</li>');
+
+   $('ul').append('<li>Append 2</li>');
+
+
+   $('ul').prepend('<li>Prepend 2</li>');
+
+   //replaceWith();
+  // we can replace h2 with a para
+   $('h2');
+   $('h2').replaceWith('<p> Hello hansani</p>');
+
+   $('h2')
+
+   $('h2').replaceWith('<p> Hello hansani</p>');
+
+
+   //clone()-we can get  copy of a element
+   $('img').clone();//can copy a image selected element's copy (clone)
+   var clonedImages=$('img').clone();$('h1').replaceWith('clonedImage');//replace cloned image with h1
+
+</script>
+</body>
+</html>
